@@ -8,11 +8,6 @@
   </div>
 </div>
 
-<%= render("_section.html", lessons: @report.basics, section: gettext("Basics")) %>
-<%= render("_section.html", lessons: @report.intermediate, section: gettext("Intermediate")) %>
-<%= render("_section.html", lessons: @report.advanced, section: gettext("Advanced")) %>
-<%= render("_section.html", lessons: @report.testing, section: gettext("Testing"))%>
-<%= render("_section.html", lessons: @report.data_processing, section: gettext("Data Processing")) %>
-<%= render("_section.html", lessons: @report.ecto, section: gettext("Ecto")) %>
-<%= render("_section.html", lessons: @report.storage, section: gettext("Storage")) %>
-<%= render("_section.html", lessons: @report.misc, section: gettext("Miscellaneous")) %>
+<%= for section <- @sections do %>
+  <%= render("_section.html", lessons: Map.fetch!(@report, section), section: humanize_section(section)) %>
+<% end %>

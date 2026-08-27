@@ -4,6 +4,11 @@ defmodule DevSecRelAIWeb.ReportController do
   alias DevSecRelAI.Lessons
 
   def index(conn, %{"locale" => locale}) do
-    render(conn, "report.html", report: Lessons.translation_report(locale))
+    sections =
+      :dev_sec_rel_ai
+      |> Application.fetch_env!(:lessons)
+      |> Keyword.keys()
+
+    render(conn, "report.html", report: Lessons.translation_report(locale), sections: sections)
   end
 end

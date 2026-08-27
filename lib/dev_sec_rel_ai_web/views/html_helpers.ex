@@ -28,6 +28,14 @@ defmodule DevSecRelAIWeb.HtmlHelpers do
 
   def friendly_version({major, minor, patch}), do: "#{major}.#{minor}.#{patch}"
 
+  def humanize_section(section) when is_atom(section), do: section |> Atom.to_string() |> humanize_section()
+
+  def humanize_section(section) when is_binary(section) do
+    section
+    |> String.split("_", trim: true)
+    |> Enum.map_join(" ", &String.capitalize/1)
+  end
+
   def lesson_link(
         conn,
         section,
