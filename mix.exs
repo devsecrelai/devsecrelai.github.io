@@ -55,7 +55,7 @@ defmodule DevSecRelAI.MixProject do
       {:makeup_elixir, ">= 0.0.0"},
       {:makeup_erlang, ">= 0.0.0"},
       {:nimble_publisher, "~> 0.1"},
-      {:phoenix, "~> 1.6.9"},
+      {:phoenix, "~> 1.7.0"},
       {:phoenix_html, "~> 3.2"},
       {:phoenix_live_view, "~> 0.17"},
       {:plug_cowboy, "~> 2.0"},
