@@ -58,6 +58,7 @@ defmodule DevSecRelAI.MixProject do
       {:phoenix, "~> 1.7.0"},
       {:phoenix_html, "~> 3.2"},
       {:phoenix_live_view, "~> 0.17"},
+      {:phoenix_view, "~> 2.0"},
       {:plug_cowboy, "~> 2.0"},
       {:ssl_verify_fun, "~> 1.1.7", manager: :rebar3, override: true},
       {:telemetry_metrics, "~> 0.6"},
