@@ -1,0 +1,22 @@
+<input type="checkbox" value="selected" id="toggle-one" class="toggle-input">
+<label for="toggle-one" class="block cursor-pointer py-6 px-4 lg:p-6 text-sm lg:text-base font-bold"><%= gettext("Lessons") %></label>
+<div class="border-t-4 border-brand-purple-800 pt-6 px-6 md:p-6 mega-menu md:absolute mb-6 md:mb-16 md:shadow-xl bg-nav dark:bg-nav-dark">
+  <div class="container mx-auto w-full grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-primary dark:text-primary-dark">
+    <div>
+      <p class="font-bold text-xl mb-2"><%= gettext("Foundations") %></p>
+      <ol class="list-decimal ml-6"><li><%= lesson_link @conn, :foundations, :threat_modeling do %><%= gettext("Threat Modeling") %><% end %></li><li><%= lesson_link @conn, :foundations, :secure_by_design do %><%= gettext("Secure by Design") %><% end %></li></ol>
+    </div>
+    <div>
+      <p class="font-bold text-xl mb-2"><%= gettext("Secure Delivery") %></p>
+      <ol class="list-decimal ml-6"><li><%= lesson_link @conn, :secure_delivery, :software_supply_chain do %><%= gettext("Software Supply Chain") %><% end %></li><li><%= lesson_link @conn, :secure_delivery, :secrets_management do %><%= gettext("Secrets Management") %><% end %></li></ol>
+    </div>
+    <div>
+      <p class="font-bold text-xl mb-2"><%= gettext("AI Security") %></p>
+      <ol class="list-decimal ml-6"><li><%= lesson_link @conn, :ai_security, :prompt_injection do %><%= gettext("Prompt Injection") %><% end %></li><li><%= lesson_link @conn, :ai_security, :agent_guardrails do %><%= gettext("Agent Guardrails") %><% end %></li></ol>
+    </div>
+    <div>
+      <p class="font-bold text-xl mb-2"><%= gettext("Resilience") %></p>
+      <ol class="list-decimal ml-6"><li><%= lesson_link @conn, :resilience, :detection_and_response do %><%= gettext("Detection and Response") %><% end %></li><li><%= lesson_link @conn, :resilience, :incident_communication do %><%= gettext("Incident Communication") %><% end %></li></ol>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<footer class="mt-16 bg-footer dark:bg-footer-dark" aria-labelledby="footerHeading">
+  <p id="footerHeading" class="sr-only">Footer</p>
+  <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 p-2 text-white rounded-full bg-purple dark:bg-purple-dark" viewBox="0 0 24 24"><path d="M12 3v18m9-9H3" /></svg>
+          <span class="ml-3 text-xl text-heavy dark:text-heavy-dark"><%= gettext("DevSecRelAI") %></span>
+        </div>
+        <p class="mt-4 text-base italic text-lighter dark:text-lighter-dark"><%= gettext("Practical learning for secure, reliable, AI-enabled delivery.") %></p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold tracking-wider text-lighter dark:text-lighter-dark uppercase"><%= gettext("Explore") %></p>
+        <ul class="mt-4 space-y-3">
+          <li><%= link(gettext("Why DevSecRelAI?"), to: Routes.page_path(@conn, :why, current_locale()), class: "text-base text-light dark:text-light-dark hover:text-gray-900") %></li>
+          <li><%= link(gettext("Blog"), to: Routes.post_path(@conn, :index), class: "text-base text-light dark:text-light-dark hover:text-gray-900") %></li>
+          <li><%= link(gettext("Get Involved"), to: Routes.page_path(@conn, :get_involved, current_locale()), class: "text-base text-light dark:text-light-dark hover:text-gray-900") %></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold tracking-wider text-lighter dark:text-lighter-dark uppercase"><%= gettext("Learning paths") %></p>
+        <ul class="mt-4 space-y-3">
+          <li><%= link(gettext("Foundations"), to: Routes.lesson_path(@conn, :index, current_locale(), :foundations), class: "text-base text-light dark:text-light-dark hover:text-gray-900") %></li>
+          <li><%= link(gettext("Secure Delivery"), to: Routes.lesson_path(@conn, :index, current_locale(), :secure_delivery), class: "text-base text-light dark:text-light-dark hover:text-gray-900") %></li>
+          <li><%= link(gettext("AI Security"), to: Routes.lesson_path(@conn, :index, current_locale(), :ai_security), class: "text-base text-light dark:text-light-dark hover:text-gray-900") %></li>
+          <li><%= link(gettext("Resilience"), to: Routes.lesson_path(@conn, :index, current_locale(), :resilience), class: "text-base text-light dark:text-light-dark hover:text-gray-900") %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 mt-12 border-t border-gray-200"><p class="text-base text-lighter dark:text-lighter-dark xl:text-center"><%= gettext("Built for practitioners who care about secure, reliable software.") %></p></div>
+  </div>
+</footer>

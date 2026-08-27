@@ -1,0 +1,36 @@
+<section class="pt-20 pb-4 md:py-12 bg-body dark:bg-body-dark">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <h1 class="mt-2 text-4xl font-extrabold tracking-tight leading-8 text-purple dark:text-purple-dark sm:text-4xl"><%= gettext("Why DevSecRelAI?") %></h1>
+      <p class="max-w-2xl mt-4 text-xl text-light dark:text-light-dark lg:mx-auto"><%= gettext("The strongest software teams make security, reliability, and responsible AI part of how they build—not a final review gate.") %></p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-body dark:bg-body-dark">
+  <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-20 lg:px-8">
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="p-8 rounded-xl bg-nav dark:bg-nav-dark">
+        <h2 class="text-2xl font-bold text-purple dark:text-purple-dark"><%= gettext("Connect disciplines") %></h2>
+        <p class="mt-4 text-light dark:text-light-dark"><%= gettext("Developer experience, application security, SRE, and AI engineering all shape the same customer outcome. Shared practices give teams a common language for making trade-offs.") %></p>
+      </div>
+      <div class="p-8 rounded-xl bg-nav dark:bg-nav-dark">
+        <h2 class="text-2xl font-bold text-purple dark:text-purple-dark"><%= gettext("Shift learning left") %></h2>
+        <p class="mt-4 text-light dark:text-light-dark"><%= gettext("Practical guidance at design and delivery time prevents expensive rework, while lightweight controls keep feedback close to the people making the change.") %></p>
+      </div>
+      <div class="p-8 rounded-xl bg-nav dark:bg-nav-dark">
+        <h2 class="text-2xl font-bold text-purple dark:text-purple-dark"><%= gettext("Make AI systems trustworthy") %></h2>
+        <p class="mt-4 text-light dark:text-light-dark"><%= gettext("AI features introduce new trust boundaries. Guardrails, clear authorization, and evaluation make it possible to use them with confidence.") %></p>
+      </div>
+      <div class="p-8 rounded-xl bg-nav dark:bg-nav-dark">
+        <h2 class="text-2xl font-bold text-purple dark:text-purple-dark"><%= gettext("Improve through practice") %></h2>
+        <p class="mt-4 text-light dark:text-light-dark"><%= gettext("Lessons, runbooks, exercises, and community discussion turn hard-won knowledge into repeatable improvements for the next release.") %></p>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto mt-16 text-center">
+      <h2 class="text-3xl font-extrabold text-heavy dark:text-heavy-dark"><%= gettext("Start with the work in front of you") %></h2>
+      <p class="mt-4 text-lg text-light dark:text-light-dark"><%= gettext("Choose one lesson, apply it to a real system, and share what you learn. Small, visible improvements compound.") %></p>
+      <%= link(gettext("Browse lessons"), to: Routes.lesson_path(@conn, :index, current_locale(), :foundations), class: "inline-flex items-center mt-8 px-5 py-3 font-extrabold text-white rounded-md bg-purple hover:text-white") %>
+    </div>
+  </div>
+</section>
