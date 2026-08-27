@@ -1,0 +1,12 @@
+/_build
+/cover
+/deps
+/doc
+/.elixir_ls
+erl_crash.dump
+
+/assets/node_modules
+/assets/static/images
+/priv/static
+/github-pages
+/work
