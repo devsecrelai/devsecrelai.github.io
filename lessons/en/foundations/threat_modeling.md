@@ -1,13 +1,11 @@
 %{
-  version: "0.3.0",
+  version: "0.3.1",
   title: "Threat Modeling 101",
   excerpt: "Turn assumptions about a system into a concrete, reviewable security plan."
 }
 ---
 
 Threat modeling turns an architecture diagram into a short, actionable security plan. Start small: model one user journey, identify the assets and trust boundaries, then decide which risks deserve a concrete response.
-
-{% include toc.html %}
 
 ## Start with the system
 
