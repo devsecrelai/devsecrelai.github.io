@@ -47,6 +47,253 @@ For each boundary, ask:
 
 Write down the risk even when you postpone the mitigation. A visible, owned decision is safer than an undocumented assumption.
 
+
+# Threat Modeling – Tool 2 - IriusRisk
+
+## 1. Introduction to Security Content
+
+IriusRisk provides structured security content that helps organizations identify threats, assess risks, and define appropriate security controls during the threat modeling process.
+
+### Risk Pattern Libraries
+
+Risk Pattern Libraries are collections of predefined:
+
+* Threats
+* Weaknesses
+* Countermeasures
+* Security controls
+
+These are grouped into specific risk patterns and can be automatically applied to system components during threat modeling.
+
+### Security Classifications
+
+Security Classifications provide a framework for categorizing assets and system components based on factors such as:
+
+* Sensitivity
+* Business importance
+* Confidentiality
+* Integrity
+* Availability
+
+These classifications help determine the appropriate level of security controls required for each component or asset.
+
+### Security Frameworks and Compliance
+
+IriusRisk supports the integration of various security frameworks, standards, and regulatory requirements into the threat modeling process.
+
+This allows organizations to align identified threats and countermeasures with security and compliance requirements.
+
+Examples may include:
+
+* OWASP
+* NIST
+* ISO 27001
+* PCI DSS
+* GDPR
+* MITRE ATT&CK
+* Other industry-specific security standards
+
+## 2. Objects and Workflows
+
+### Components
+
+Components represent the individual parts of a system architecture.
+
+Examples include:
+
+* Applications
+* Software modules
+* APIs
+* Databases
+* Hardware devices
+* Cloud services
+* Microservices
+* Third-party services
+
+Components are typically represented within the architecture diagram and are evaluated for potential threats.
+
+### Assets
+
+Assets are valuable resources, information, or data that an organization aims to protect.
+
+Examples include:
+
+* Customer information
+* Credentials
+* Financial data
+* Intellectual property
+* Application data
+* Cryptographic keys
+* Business-critical information
+
+Understanding the assets associated with a component helps determine the impact of potential threats.
+
+### Trust Zones
+
+Trust Zones are logical or conceptual areas within a system that share common security or trust characteristics.
+
+Examples include:
+
+* Public/Internet Zone
+* DMZ
+* Internal Network
+* Production Environment
+* Development Environment
+* Highly Restricted Environment
+
+Trust Zones help identify trust boundaries and situations where data or communication crosses between environments with different security levels.
+
+## 3. Workflows
+
+Workflow states in IriusRisk allow administrators to control how threat modeling projects progress through different stages.
+
+Workflows can help enforce:
+
+* Project review processes
+* Access restrictions
+* Security approvals
+* Compliance checks
+* Threat model validation
+* Risk acceptance procedures
+
+For example, a project could progress through states such as:
+
+**Draft → Security Review → Remediation → Approved**
+
+Workflow states provide administrators with greater control over project access, security restrictions, governance, and compliance enforcement.
+
+## 4. User Settings and Access Management
+
+### Users
+
+Administrators can create and manage user accounts within IriusRisk.
+
+User management may include:
+
+* Creating users
+* Updating user information
+* Disabling users
+* Assigning roles
+* Managing access
+
+### Permissions
+
+Permissions determine what actions a user is allowed to perform within the platform.
+
+Roles and permissions can be assigned to control access to capabilities such as:
+
+* Creating projects
+* Editing threat models
+* Reviewing threats
+* Managing countermeasures
+* Approving projects
+* Managing platform configuration
+
+### Business Units
+
+Business Units allow organizations to logically segment projects, teams, and resources.
+
+They can be used to ensure that users only have access to projects and information relevant to their:
+
+* Department
+* Business function
+* Product team
+* Region
+* Organizational unit
+
+This is particularly useful for large organizations managing multiple teams and threat modeling projects.
+
+## 5. Custom Fields
+
+Custom Fields provide flexibility to add organization-specific or domain-specific information to different objects within IriusRisk.
+
+Custom fields can be used to capture information such as:
+
+* Application owner
+* Business criticality
+* Data classification
+* Environment
+* Regulatory scope
+* Risk owner
+* Internal project identifiers
+
+This allows organizations to customize IriusRisk according to their internal security and governance requirements.
+
+## 6. Rules
+
+Rules are used to automate and refine the threat modeling process.
+
+The rule engine evaluates information entered into a threat model, including:
+
+* Architecture diagrams
+* Components
+* Data flows
+* Trust zones
+* Assets
+* Security classifications
+* Component properties
+
+Based on this information, rules can automatically:
+
+* Identify potential threats
+* Apply relevant risk patterns
+* Recommend countermeasures
+* Modify risk calculations
+* Enforce security requirements
+* Apply compliance controls
+* Trigger specific threat modeling actions
+
+Rules help transform threat modeling from a completely manual activity into a more automated and repeatable security engineering process.
+
+## Overall IriusRisk Threat Modeling Flow
+
+**Architecture Design**
+
+→ Define Components
+→ Define Assets
+→ Define Trust Zones
+→ Define Data Flows
+→ Apply Security Classifications
+→ Evaluate Rules and Risk Patterns
+→ Identify Threats and Weaknesses
+→ Recommend Countermeasures
+→ Calculate and Review Risk
+→ Remediate Security Issues
+→ Security/Compliance Review
+→ Approve the Threat Model
+
+
+## Create Irius Risk Account 
+
+Accessing the tool
+If you haven't acquired IriusRisk yet, do not worry. IriusRisk offers a Community Edition that is available to everyone simply by creating an account.
+Step 1: Go to: https://www.iriusrisk.com/
+
+At the top right corner, click Try Now to redirect to the Community Edition.
+
+Step 2: Click on "Create free account"
+
+Add the required information.
+
+
+- https://community.iriusrisk.com/projects
+
+![](/img-iriusrisk/IriusRisk.png)
+
+- create blank project 
+
+![](./img-iriusrisk/tm-demo.png)
+
+- create diagram 
+
+![](./img-iriusrisk/create-diagram.png)
+
+- check threat recommandation for improvement 
+![](./img-iriusrisk/check-assesement.png)
+
+
+
+
 ## Threat Modeling for AI ML Systems
 
 An AI or machine learning system uses models and data to make predictions, classifications, recommendations, or decisions. It may also retrieve documents, call tools, or trigger actions. These capabilities make the trust boundaries wider: the model, its inputs, its retrieved context, and its tools all need to be considered.
