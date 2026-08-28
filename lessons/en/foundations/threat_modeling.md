@@ -24,3 +24,13 @@ For each boundary, ask who can send data, what they control, what the service tr
 ## Make it a team habit
 
 Run a short threat-model review when an architecture changes, a new integration is introduced, or an AI capability gains a tool or data source. The output should influence delivery work, not become a document that no one revisits.
+
+
+## Threat Modeling AI / ML system 
+
+what is an AI/ML system and importance of threat modeling 
+
+AI/ML system refers to a system that incorporates artificial intelligence (AI) and machine learning (ML) models to perform tasks such as prediction. classification , recommandation and decision making . these system rely on data driven algorithms that automatically improve their performance through experience , enabling automation of complex tasks that require reasoning , learniing and adapting to new information 
+
+AI/ML lifecyle describes the sequence of stages involved in developing , deploying , and maintaining AI/ML models . it includes stages such as Data collection , data pre-processing , modeling traing , model tunning and validation , model deployment , Infernce and monitoring and model maintenance amd retraining . This life cycle ensures continuous improvement , monitoring and aadaptation of AI/ML models over time. 
+
