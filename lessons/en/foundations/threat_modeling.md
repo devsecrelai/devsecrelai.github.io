@@ -1,6 +1,6 @@
 %{
-  version: "0.1.0",
-  title: "Threat Modeling",
+  version: "0.1.1",
+  title: "Threat Modeling 101",
   excerpt: "Turn assumptions about a system into a concrete, reviewable security plan."
 }
 ---
