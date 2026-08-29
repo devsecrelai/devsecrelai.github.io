@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">AI and machine learning lifecycle threat model</title>
+  <desc id="desc">Five connected stages show data collection, preparation and training, validation and release, inference and tool use, and monitoring and maintenance. A feedback loop returns from monitoring to data collection.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c4b5fd"/>
+    </marker>
+    <style>
+      .title { font: 700 30px system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif; fill: #f8fafc; }
+      .stage { font: 700 20px system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif; fill: #f8fafc; }
+      .risk { font: 400 16px system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif; fill: #cbd5e1; }
+      .loop { font: 600 17px system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif; fill: #ddd6fe; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="440" rx="32" fill="#111827"/>
+  <text x="64" y="74" class="title">Threat model the entire AI and ML lifecycle</text>
+
+  <g>
+    <rect x="58" y="158" width="190" height="138" rx="18" fill="#312e81" stroke="#a78bfa" stroke-width="3"/>
+    <text x="153" y="205" text-anchor="middle" class="stage">Data collection</text>
+    <text x="153" y="236" text-anchor="middle" class="risk">source, consent,</text>
+    <text x="153" y="259" text-anchor="middle" class="risk">poisoning</text>
+  </g>
+
+  <g>
+    <rect x="282" y="158" width="190" height="138" rx="18" fill="#312e81" stroke="#a78bfa" stroke-width="3"/>
+    <text x="377" y="205" text-anchor="middle" class="stage">Preparation</text>
+    <text x="377" y="231" text-anchor="middle" class="stage">and training</text>
+    <text x="377" y="260" text-anchor="middle" class="risk">artifacts, secrets</text>
+  </g>
+
+  <g>
+    <rect x="506" y="158" width="190" height="138" rx="18" fill="#312e81" stroke="#a78bfa" stroke-width="3"/>
+    <text x="601" y="205" text-anchor="middle" class="stage">Validation</text>
+    <text x="601" y="231" text-anchor="middle" class="stage">and release</text>
+    <text x="601" y="260" text-anchor="middle" class="risk">safety, leakage</text>
+  </g>
+
+  <g>
+    <rect x="730" y="158" width="190" height="138" rx="18" fill="#164e63" stroke="#67e8f9" stroke-width="3"/>
+    <text x="825" y="205" text-anchor="middle" class="stage">Inference</text>
+    <text x="825" y="231" text-anchor="middle" class="stage">and tool use</text>
+    <text x="825" y="260" text-anchor="middle" class="risk">prompts, permissions</text>
+  </g>
+
+  <g>
+    <rect x="954" y="158" width="190" height="138" rx="18" fill="#164e63" stroke="#67e8f9" stroke-width="3"/>
+    <text x="1049" y="205" text-anchor="middle" class="stage">Monitoring</text>
+    <text x="1049" y="231" text-anchor="middle" class="stage">and maintenance</text>
+    <text x="1049" y="260" text-anchor="middle" class="risk">drift, misuse, rollback</text>
+  </g>
+
+  <path d="M248 227 H282 M472 227 H506 M696 227 H730 M920 227 H954" stroke="#c4b5fd" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1049 296 V354 H153 V296" stroke="#c4b5fd" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <text x="600" y="387" text-anchor="middle" class="loop">Monitoring feeds the next data and model decision</text>
+</svg>

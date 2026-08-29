@@ -1,5 +1,5 @@
 %{
-  version: "0.3.1",
+  version: "0.4.0",
   title: "Threat Modeling 101",
   excerpt: "Turn assumptions about a system into a concrete, reviewable security plan."
 }
@@ -10,6 +10,8 @@ Threat modeling turns an architecture diagram into a short, actionable security 
 ## Start with the system
 
 Before naming threats, make the system understandable to everyone in the room. Sketch the user, service, model, tool, data store, and third-party boundaries. Draw an arrow for every meaningful data flow, especially where untrusted input becomes trusted data or gains access to a sensitive capability.
+
+![A user request crosses public and protected trust boundaries before reaching an AI agent, an approved tool, and customer records.](/images/lessons/threat-modeling-system-flow.svg)
 
 ### A minimal model
 
@@ -309,6 +311,8 @@ Model the lifecycle, not only the deployed model:
 3. **Validation and release** — test for unsafe behavior, bias, data leakage, and abuse cases before deployment.
 4. **Inference and tool use** — constrain prompts, retrieval, model outputs, and permissions granted to tools.
 5. **Monitoring and maintenance** — log meaningful events, detect drift or misuse, and make rollback and retraining decisions reviewable.
+
+![Five AI and machine learning lifecycle stages connect data collection, training, validation, inference, and monitoring in a feedback loop.](/images/lessons/ai-ml-lifecycle.svg)
 
 ### A practical starter template
 
