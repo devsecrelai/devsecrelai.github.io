@@ -1,5 +1,5 @@
 %{
-  version: "0.4.0",
+  version: "0.5.0",
   title: "Threat Modeling 101",
   excerpt: "Turn assumptions about a system into a concrete, reviewable security plan."
 }
@@ -50,13 +50,13 @@ For each boundary, ask:
 Write down the risk even when you postpone the mitigation. A visible, owned decision is safer than an undocumented assumption.
 
 
-# Threat Modeling – Tool 2 - IriusRisk
+## Tool 2 IriusRisk
 
-## 1. Introduction to Security Content
+### Security content
 
 IriusRisk provides structured security content that helps organizations identify threats, assess risks, and define appropriate security controls during the threat modeling process.
 
-### Risk Pattern Libraries
+#### Risk pattern libraries
 
 Risk Pattern Libraries are collections of predefined:
 
@@ -67,7 +67,7 @@ Risk Pattern Libraries are collections of predefined:
 
 These are grouped into specific risk patterns and can be automatically applied to system components during threat modeling.
 
-### Security Classifications
+#### Security classifications
 
 Security Classifications provide a framework for categorizing assets and system components based on factors such as:
 
@@ -79,7 +79,7 @@ Security Classifications provide a framework for categorizing assets and system 
 
 These classifications help determine the appropriate level of security controls required for each component or asset.
 
-### Security Frameworks and Compliance
+#### Security frameworks and compliance
 
 IriusRisk supports the integration of various security frameworks, standards, and regulatory requirements into the threat modeling process.
 
@@ -95,9 +95,9 @@ Examples may include:
 * MITRE ATT&CK
 * Other industry-specific security standards
 
-## 2. Objects and Workflows
+### Objects and workflows
 
-### Components
+#### Components
 
 Components represent the individual parts of a system architecture.
 
@@ -114,7 +114,7 @@ Examples include:
 
 Components are typically represented within the architecture diagram and are evaluated for potential threats.
 
-### Assets
+#### Assets
 
 Assets are valuable resources, information, or data that an organization aims to protect.
 
@@ -130,7 +130,7 @@ Examples include:
 
 Understanding the assets associated with a component helps determine the impact of potential threats.
 
-### Trust Zones
+#### Trust zones
 
 Trust Zones are logical or conceptual areas within a system that share common security or trust characteristics.
 
@@ -145,7 +145,7 @@ Examples include:
 
 Trust Zones help identify trust boundaries and situations where data or communication crosses between environments with different security levels.
 
-## 3. Workflows
+### Workflows
 
 Workflow states in IriusRisk allow administrators to control how threat modeling projects progress through different stages.
 
@@ -164,9 +164,9 @@ For example, a project could progress through states such as:
 
 Workflow states provide administrators with greater control over project access, security restrictions, governance, and compliance enforcement.
 
-## 4. User Settings and Access Management
+### User settings and access management
 
-### Users
+#### Users
 
 Administrators can create and manage user accounts within IriusRisk.
 
@@ -178,7 +178,7 @@ User management may include:
 * Assigning roles
 * Managing access
 
-### Permissions
+#### Permissions
 
 Permissions determine what actions a user is allowed to perform within the platform.
 
@@ -191,7 +191,7 @@ Roles and permissions can be assigned to control access to capabilities such as:
 * Approving projects
 * Managing platform configuration
 
-### Business Units
+#### Business units
 
 Business Units allow organizations to logically segment projects, teams, and resources.
 
@@ -205,7 +205,7 @@ They can be used to ensure that users only have access to projects and informati
 
 This is particularly useful for large organizations managing multiple teams and threat modeling projects.
 
-## 5. Custom Fields
+### Custom fields
 
 Custom Fields provide flexibility to add organization-specific or domain-specific information to different objects within IriusRisk.
 
@@ -221,7 +221,7 @@ Custom fields can be used to capture information such as:
 
 This allows organizations to customize IriusRisk according to their internal security and governance requirements.
 
-## 6. Rules
+### Rules
 
 Rules are used to automate and refine the threat modeling process.
 
@@ -247,7 +247,7 @@ Based on this information, rules can automatically:
 
 Rules help transform threat modeling from a completely manual activity into a more automated and repeatable security engineering process.
 
-## Overall IriusRisk Threat Modeling Flow
+### Overall IriusRisk threat modeling flow
 
 **Architecture Design**
 
@@ -265,33 +265,23 @@ Rules help transform threat modeling from a completely manual activity into a mo
 → Approve the Threat Model
 
 
-## Create Irius Risk Account 
+### Create an IriusRisk account
 
-Accessing the tool
-If you haven't acquired IriusRisk yet, do not worry. IriusRisk offers a Community Edition that is available to everyone simply by creating an account.
-Step 1: Go to: https://www.iriusrisk.com/
+If you have not acquired IriusRisk, start with the Community Edition by creating an account.
 
-At the top right corner, click Try Now to redirect to the Community Edition.
+1. Visit [IriusRisk](https://www.iriusrisk.com/) and select **Try Now**.
+2. Select **Create free account** and provide the required information.
+3. Open the [IriusRisk Community Edition projects page](https://community.iriusrisk.com/projects).
 
-Step 2: Click on "Create free account"
+![IriusRisk Community Edition projects page.](/images/lessons/iriusrisk/IriusRisk.png)
 
-Add the required information.
+Create a blank project, then add an architecture diagram and review the generated threat recommendations.
 
+![Create a blank IriusRisk project.](/images/lessons/iriusrisk/tm-demo.png)
 
-- https://community.iriusrisk.com/projects
+![Create an IriusRisk architecture diagram.](/images/lessons/iriusrisk/create-diagram.png)
 
-![](/img-iriusrisk/IriusRisk.png)
-
-- create blank project 
-
-![](./img-iriusrisk/tm-demo.png)
-
-- create diagram 
-
-![](./img-iriusrisk/create-diagram.png)
-
-- check threat recommandation for improvement 
-![](./img-iriusrisk/check-assesement.png)
+![Review IriusRisk threat recommendations for improvement.](/images/lessons/iriusrisk/check-assesement.png)
 
 
 
